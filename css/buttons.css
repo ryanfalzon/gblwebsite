@@ -1,0 +1,10 @@
+.playButton {
+  background-color: #18B19C;
+  border-color: #18B19C;
+  padding:1rem 1.75rem;font-size:1.25rem
+}
+
+.playButton:hover, .playButton:focus, .playButton:active {
+    background-color: #12Af76;
+    border-color: #128A76;
+}
