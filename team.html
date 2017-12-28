@@ -23,6 +23,16 @@
 
     <!-- Custom styles for this template -->
     <link href="css/freelancer.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+    <style type="text/css">
+      .carousel{
+        width: 50%;
+        margin: auto;
+      }
+      .slider{
+        padding-bottom: 0rem;
+      }
+    </style>
 
   </head>
 
@@ -32,7 +42,7 @@
     <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="index.html">Digital Serious Games</a>
-        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-secondary rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
         </button>
@@ -52,6 +62,59 @@
       </div>
     </nav>
 
+    <!-- Where It All Started section Section -->
+    <section class="bg-primary text-secondary mb-0 first-section" id="gbl">
+      <div class="container">
+        <h3 class="text-center text-uppercase text-secondary">Where it all started...</h3>
+        <hr class="star-dark mb-5">
+          <p class="lead sectiontext">
+            When the student is not being engaged and motivated to learn, that is where we start losing the future generation of our workforce.  Learning means acquiring the skills needed to respond appropriately in a variety of situations.  Digital serious games provide interactive experiences that motivate and actively engage our students to be at the centre of the learning process.  Because of the virtual environment created by the game, the students can learn to function in a safe context, using rules prescribed by the game, interact and relay feedback.  The connection between the learning experience and our real-life scenario is more pronounced. 
+          </p>
+      </div>
+     
+      <div class="carousel" id="main" role="main">
+        <section class="slider">
+          <div class="flexslider">
+            <ul class="slides">
+              <li>
+                <img src="img/gamejam/001.jpg" />
+              </li>
+              <li>
+                <img src="img/gamejam/002.jpg" />
+              </li>
+              <li>
+                <img src="img/gamejam/003.jpg" />
+              </li>
+              <li>
+                <img src="img/gamejam/004.jpg" />
+              </li>
+              <li>
+                <img src="img/gamejam/005.jpg" />
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- And Now Section -->
+    <section class="bg-primary text-secondary mb-0" id="dsg">
+      <div class="container">
+        <h3 class="text-center text-uppercase text-secondary">And Now?</h3>
+        <hr class="star-dark mb-5">
+          <p class="lead sectiontext">
+            Serious game development is growing.  Military, corporate, education and healthcare organisations from around the world are enjoying the positive effects that serious game development have had on their organisation’s learning needs.  
+          </p>
+      </div>
+    </section>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-to-top d-lg-none position-fixed ">
+      <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+      </a>
+    </div>
+
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -66,5 +129,29 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/freelancer.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+
+    <!-- jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+  <!-- FlexSlider -->
+  <script defer src="js/jquery.flexslider.js"></script>
+
+  <!-- Modernizr -->
+  <script src="js/modernizr.js"></script>
+
+  <script type="text/javascript">
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
   </body>
 </html>

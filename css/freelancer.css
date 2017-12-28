@@ -50,7 +50,7 @@ hr.star-dark:after {
   background-color: white; }
 
 section {
-  padding: 6rem 0; }
+  padding: 4rem 0; }
   section h2 {
     font-size: 2.25rem;
     line-height: 2rem; }
@@ -58,6 +58,16 @@ section {
     section h2 {
       font-size: 3rem;
       line-height: 2.5rem; } }
+
+.first-section {
+  padding-top: 10rem;
+}
+
+.sectiontext {
+  margin-right: 6rem;
+  margin-left: 6rem;
+  text-align: justify;
+}
 
 .btn-xl {
   padding: 1rem 1.75rem;
